@@ -1,18 +1,3 @@
-# Live Coding Task: Producer Licenses & Compliance Check
-
-**Time Limit:** 30 minutes
-**Position:** Backend Developer (.NET / C#)
-
----
-
-## Introduction
-
-Welcome! This task evaluates your ability to work with an existing codebase, write efficient EF Core queries, and debug existing code.
-
-**Take a few minutes to explore the codebase and understand its architecture before writing code.**
-
----
-
 ## Architecture Overview
 
 ### Backend (.NET 10 / ASP.NET Core)
@@ -55,7 +40,7 @@ Your job:
 
 ### Bonus: Performance Review
 
-Take a look at the existing `GetProducers` query handler. Do you notice any performance concerns? If time permits, suggest or implement a fix.
+See how we could improve `GetProducers` query handler in terms of performance.
 
 ---
 
@@ -70,19 +55,3 @@ cd API && dotnet run
 - `GET /api/v1/producers` - List all producers
 - `GET /api/v1/producers/{id}` - Get producer by ID
 - `GET /api/v1/producers/{id}/compliance` - Compliance check (buggy - Task 2)
-
----
-
-## Evaluation Criteria
-
-| Criteria | What we're looking for |
-|----------|------------------------|
-| **EF Core proficiency** | Efficient queries - proper use of Include, projection, avoiding N+1 |
-| **Debugging skills** | Systematic approach to finding and fixing bugs |
-| **Pattern adherence** | Follows the established CQRS architecture |
-| **Code quality** | Clean, well-organized code |
-| **Communication** | Explains thought process while coding |
-
----
-
-Good luck!
